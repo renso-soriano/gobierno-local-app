@@ -9,6 +9,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { TramitesOnlineComponent } from './servicios/tramites-online/tramites-online.component';
 import { PagoImpuestosComponent } from './servicios/pago-impuestos/pago-impuestos.component';
 import { ConsultaCiudadanaComponent } from './servicios/consulta-ciudadana/consulta-ciudadana.component';
+import { ServiciosCiudadanosComponent } from './servicios/servicios-ciudadanos/servicios-ciudadanos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ConsultaCiudadanaComponent } from './servicios/consulta-ciudadana/consu
     NavMenuComponent,
     TramitesOnlineComponent,
     PagoImpuestosComponent,
-    ConsultaCiudadanaComponent
+    ConsultaCiudadanaComponent,
+    ServiciosCiudadanosComponent
   ],
   imports: [
     BrowserModule,

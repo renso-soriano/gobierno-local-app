@@ -1,0 +1,23 @@
+<div *ngIf="!isAuthenticated; else loggedInTemplate">
+    <h2>Por favor, inicia sesión para acceder a los servicios.</h2>
+    <button (click)="toggleAuth()">Iniciar sesión</button>
+  </div>
+  
+  <ng-template #loggedInTemplate>
+    <h2>Bienvenido a los Servicios Ciudadanos</h2>
+    <ul>
+      <li>Servicio 1</li>
+      <li>Servicio 2</li>
+      <li>Servicio 3</li>
+    </ul>
+    <button (click)="toggleAuth()">Cerrar sesión</button>
+  </ng-template>
+
+  <ul *ngIf="userType === 'admin'">
+    <li>Servicio Administrativo</li>
+    <li>Gestión de Usuarios</li>
+  </ul>
+  <ul *ngIf="userType === 'usuario'">
+    <li>Consulta de Documentos</li>
+    <li>Pago de Servicios</li>
+  </ul>
